@@ -4,6 +4,8 @@ import Home from "./screens/Home";
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from "@react-navigation/native";
 import Detail from "./screens/Detail";
+import Notification from './notification/Notification';
+
 
 
 const Stack = createStackNavigator();
@@ -21,6 +23,10 @@ const App = () => {
           component={Detail}
           options={{ title: 'My Detail' }}
         />
+        <Stack.Screen 
+          name="Notification" 
+          component={Notification} 
+      />
       </Stack.Navigator>
     </NavigationContainer>
   );

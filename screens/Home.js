@@ -10,6 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 
+
 const db =  DatabaseConnected.getConnection()
 
 const Home = ({navigation }) => {
@@ -166,6 +167,10 @@ const Home = ({navigation }) => {
       <View style={styles.CustomButton}>
         <ButtonPress 
           handlePress={submitted} title="Submit"
+        />
+        <ButtonPress
+          title="Notification" 
+          handlePress={() => navigation.navigate('Notification')}
         />
       </View>
   </View>
