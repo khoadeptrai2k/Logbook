@@ -156,7 +156,7 @@ const Home = ({navigation }) => {
       </Picker>
 
       <Text text="Note"/>
-      <TextInput style={{height:40}} numberOfLines={5} 
+      <TextInput style={{height:100}} numberOfLines={5} 
       multiline={true} placeholder="Note"  
       onChangeText={(note) => setNote(note)} />
       
